@@ -1,0 +1,5 @@
+<!--pages/fangshi/fangshi.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;"></view>
+<view class="test-big">
+  <image src="https://pic.imgdb.cn/item/62139ba02ab3f51d91f449f0.jpg" class="bg-image" mode="scaleToFill"></image>
+</view>

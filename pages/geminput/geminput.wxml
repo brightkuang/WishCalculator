@@ -1,0 +1,98 @@
+<!--pages/geminput/geminput.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;" class="BoxBackgroundColor"></view>
+<scroll-view scroll-x="true" style="width: 750rpx;height: 20vh;box-shadow: 0px 2px 1px 1px rgb(82, 82, 82) ;" class="BoxBackgroundColor">
+  <view style="display: flex;flex-direction: row;">
+    <block wx:for="{{name}}" wx:if="{{wish[index]}}">
+      <view style="flex:0 0 150rpx;margin: 30rpx;">
+        <view style="width: 150rpx;height: 15vh;flex-direction: column;" class="card" >
+          <view class="roma">{{roma[index]}}</view>
+          <view>{{name[index]}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+<!--已有原石数目-->
+
+<view style="display: flex;margin: 50rpx;margin-top: 50rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 30rpx;  flex:0 0 50rpx;margin-top: 5rpx;" src="/images/Item_Primogem.png"></image>
+  <view class="text">目前原石数量:</view>
+
+  <view class="inputbox">
+    <input type="number" bindinput="geminput"></input>
+  </view>
+</view>
+<!--已有纠缠之缘数目-->
+<view style="display: flex;margin: 50rpx;margin-top: 0rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 30rpx;  flex:0 0 50rpx;margin-top: 5rpx;" src="/images/Item_Intertwined_Fate.png"></image>
+  <view class="text">纠缠之缘数量:</view>
+  <view class="inputbox">
+    <input type="number" bindinput="fateinput"></input>
+  </view>
+</view>
+<!--垫几发-->
+
+<view style="display: flex;margin: 50rpx;margin-top:0rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 30rpx;  flex:0 0 50rpx;margin-top: 5rpx;" src="/images/history.svg"></image>
+  <view class="text">历史抽取数量:</view>
+  <view class="inputbox">
+    <input type="number" bindinput="beforeinput"></input>
+  </view>
+</view>
+
+<!--大小保底-->
+<view style="display: flex;margin: 50rpx;margin-top: 0rpx;margin-bottom:  20rpx;">
+  <image style=" height:40rpx ;width: 20rpx;  flex:0 0 50rpx;margin-top: 8rpx;" src="/images/previous-line-circle.svg"></image>
+  <view class="text">是否是大保底:</view>
+  <van-switch style="margin-left: 245rpx;" checked="{{dachecked}}" active-color="{{activecolor}}" inactive-color="{{inactivecolor}}" bind:change="daswitchChange" />
+</view>
+
+<!--月卡-->
+
+<view style="display: flex;margin: 50rpx;margin-top: 0rpx;margin-bottom:  20rpx;">
+  <image style=" height:40rpx ;width: 20rpx;  flex:0 0 50rpx;margin-top: 8rpx;" src="/images/yueka.svg"></image>
+  <view class="text">是否购买月卡:</view>
+  <van-switch style="margin-left: 245rpx;" checked="{{ykchecked}}" active-color="{{activecolor}}" inactive-color="{{inactivecolor}}" bind:change="ykswitchChange" />
+</view>
+<!--每日任务-->
+
+<view style="display: flex;margin: 50rpx;margin-top: 0rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 20rpx;  flex:0 0 50rpx;margin-top: 2rpx;" src="/images/Icon_Commission.png"></image>
+  <view class="text">完成每日任务:</view>
+  <van-switch style="margin-left: 245rpx;" checked="{{dcchecked}}" active-color="{{activecolor}}" inactive-color="{{inactivecolor}}" bind:change="dcswitchChange" />
+</view>
+
+<!--大月卡-->
+
+<view style="display: flex;margin: 50rpx;margin-top: 20rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 20rpx;  flex:0 0 50rpx;margin-top: 2rpx;" src="/images/Item_Guidance_of_the_Land.png"></image>
+  <view class="text">解锁珍珠纪行:</view>
+  <van-switch style="margin-left: 245rpx;" checked="{{dykchecked}}" active-color="{{activecolor}}" inactive-color="{{inactivecolor}}" bind:change="dykswitchChange" />
+</view>
+
+<!--深渊-->
+<view style="display: flex;margin: 50rpx;margin-top: 20rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 20rpx;  flex:0 0 50rpx;margin-top: 2rpx;" src="/images/luoxuandark.svg"></image>
+  <view class="text" style="margin-right: 120rpx;">深渊目标星数：</view>
+  <van-stepper value="{{ sy }}" input-width="100rpx" button-size="55rpx" min="0" max="36" step="9" disable-input="{{true}}" bind:change="syonChange" />
+</view>
+
+<!--日历-->
+
+
+<view style="display: flex;margin: 50rpx;margin-top: 20rpx;margin-bottom:  20rpx;">
+  <image style=" height:50rpx ;width: 30rpx;  flex:0 0 50rpx;margin-top: 5rpx;" src="/images/calender.svg"></image>
+  <view class="text" style="margin-right: 180rpx;">日历</view>
+
+  <view class="calinputbox" hover-class="calbutton-tap" bindtap="calendar">change</view>
+
+</view>
+
+
+
+
+
+
+<view class="button" hover-class="button-tap" style="right: 50rpx;" bindtap="next">next</view>
+<view class="button" hover-class="button-tap" style="left: 50rpx;" bindtap="back">back</view>

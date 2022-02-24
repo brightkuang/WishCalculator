@@ -1,0 +1,33 @@
+/* pages/primogem/primogem.wxss */
+@import"/button.wxss";
+@import"/topbox.wxss";
+@import"/topcard.wxss";
+
+
+page {
+  background-color: #F2E9EE;
+}
+.box{
+  margin: 50rpx;
+  border-radius: 30rpx;
+  background-color: #F2E9EE;
+  border: solid #8C3565 3rpx;
+}
+
+.text{
+  font-family: PingFang SC;
+  font-size: 35rpx;
+}
+
+@media(prefers-color-scheme:dark){
+  page {
+    background-color: #222A59;
+  }
+  .box{
+    margin: 50rpx;
+    border-radius: 30rpx;
+    background-color: #222A59;
+    border: solid #F2DFEB 3rpx;
+  }
+  
+}

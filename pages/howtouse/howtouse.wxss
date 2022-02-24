@@ -1,0 +1,17 @@
+/* pages/how to use/howtouse.wxss */
+.box{
+    margin-top: 0rpx;margin-left: 10rpx;margin-right: 10rpx;
+    padding:10px
+}
+.datu{
+    height: 300rpx;
+    width: 600rpx;
+    margin-left: 50rpx;
+}
+.shutu{
+    height: 650rpx;
+    width: 300rpx;
+    margin-left: 180rpx;
+    margin-bottom: 20rpx;
+    margin-top: 20rpx;
+}

@@ -1,0 +1,40 @@
+/* pages/result/result.wxss */
+@import"/button.wxss";
+@import"/topbox.wxss";
+@import"/topcard.wxss";
+
+page {
+  background-color: #F2E9EE;
+}
+.waikuang{
+  width: 650rpx ;
+  margin: 50rpx;
+  margin-top: 20rpx;
+  border-radius: 35rpx;
+  background-color: #e9cedd;
+  border: solid #8C3565 3rpx;
+  box-shadow: 0px 0px 2px 2px #8d8d8d;
+}
+.pen{
+  font-family: PingFang SC;
+  font-size: 45rpx;
+}
+
+@media(prefers-color-scheme:dark) {
+
+  page {
+    background-color: #222A59;
+  }
+  .waikuang{
+    height: 800rpx;
+    width: 650rpx ;
+    margin: 50rpx;
+    border-radius: 35rpx;
+    background-color: #313e86;
+    border: solid #F2DFEB 3rpx;
+    box-shadow: 0px 0px 2px 2px #8d8d8d;
+  }
+  
+
+
+}

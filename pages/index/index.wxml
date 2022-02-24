@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="start" hover-class="start-tap" bindtap="start">
+  <view style="margin-left: 75rpx;margin-top: 25rpx;font-family: PingFang SC;"class="startcolor">
+    开始
+  </view>
+</view>
+
+<image src="{{addimagesource}}" style="position: fixed; margin-left: 60rpx;margin-top: 45vh;transform: scale(0.8);"></image>
+<!--<image src="/images/index-border.png" style="position: fixed; width: 750rpx;height: 101vh;"></image>-->
+
+<view class="content" style="position: fixed;margin-top: 25vh;margin-left: 220rpx;transform: scale(1.6);">
+  <view class="planet">
+    <view class="ring"></view>
+    <view class="cover-ring"></view>
+    <view class="spots">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </view>
+  </view>
+</view>
+<image src="/images/more.svg" style="position: fixed;bottom: 50rpx;right: 50rpx;width: 60rpx;height: 60rpx;" bindtap="more"></image>
+<view style="position:fixed;height: 100vh;width: 100vw;background-color: #272727b7;" bindtap="hidemore" hidden="{{hide}}"></view>
+
+<view style="width: 200rpx;height: 300rpx;position: fixed;bottom: 50rpx;right: 50rpx;border-radius: 20rpx;" hidden="{{hide}}" class="morecolor">
+  <view style="height: 70rpx;text-align: center;padding-top: 40rpx;" bindtap="aboutus" class="startcolor">aboutus</view>
+  <van-divider  customStyle="border-color:#8C3565"/>
+  <view style="height: 60rpx;text-align: center;padding-top: 20rpx" bindtap="howtouse" class="startcolor">how-to-use</view>
+</view>

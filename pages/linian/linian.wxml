@@ -1,0 +1,5 @@
+<!--pages/linian/linian.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;"></view>
+<view class="test-big">
+  <image src="https://pic.imgdb.cn/item/62139bc52ab3f51d91f4b729.jpg" class="bg-image" mode="scaleToFill"></image>
+</view>

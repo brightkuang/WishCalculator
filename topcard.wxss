@@ -1,0 +1,37 @@
+.card{
+   display: flex;
+   border-radius: 25rpx;
+   background-color: #F2E9EE;
+   text-align: center;
+   border: solid #8C3565 3rpx;
+  box-shadow: 0px 0px 2px 2px #8d8d8d;
+   
+}
+.roma{
+   margin-top: 30rpx;
+   margin-bottom: 10rpx;
+   font-size: 100rpx;
+   color: #8C3565;
+}
+
+
+
+
+@media(prefers-color-scheme:dark){
+ .card{
+ border-radius: 25rpx;
+ background-color: #222A59;
+ border: solid #F2DFEB 3rpx;
+    box-shadow: 0px 0px 2px 2px #8d8d8d;
+ }
+ .roma{
+   margin-top: 30rpx;
+   margin-bottom: 10rpx;
+   font-size: 100rpx;
+   color: #F2DFEB;
+}
+
+
+
+
+}

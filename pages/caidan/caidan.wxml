@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view style="position: fixed;width: 100%;height: 100%;background-color: {{backgroundcolor}};"></view>
+
+<view style="transform: rotate(90deg);position: fixed;top: 300rpx;left: -1100rpx;">
+  <video src="https://tools-wiki.biligame.com/ys/simulator/dist/videos/5starwish.mp4" style="width:180vh;height: 1000rpx;" bindended="ended" hidden="{{ishidden}}" autoplay="true" controls="true" show-fullscreen-btn="false" show-progress="false" show-play-btn="false" id="wish"></video>
+</view>
+
+<view style="transform: rotate(90deg);position: fixed;top: {{top}}rpx;left: 220rpx;font-size: {{fontsize}}rpx;" hidden="{{texthidden}}">
+<image src="{{imgsrc}}" style="width: 300rpx;height: 400rpx;"></image>
+</view>
+
+<view style="transform: rotate(90deg);position: fixed;top: 250rpx;left: 50rpx;font-size: 50rpx;" hidden="{{text2hidden}}">
+<text style="color: black;">微信小程序开发</text>
+<view style="display: flex;">
+    <block wx:for="{{stars}}" wx:if="{{index<number}}">
+    ✨
+    </block>
+</view>
+</view>
+
+<view style="width: 750rpx;height: 100vh;" bindtap="next" hidden="{{texthidden}}"></view>
+
+<view hidden="{{hidden}}" style="transform: scale(2.5);position: fixed;width: 100%;height: 100%;top: -100rpx;">
+   <view class="container" >
+       <view class="icon">
+           <view class="shine">
+               <span style="--i:1"></span>
+               <span style="--i:2"></span>
+               <span style="--i:3"></span>
+               <span style="--i:4"></span>
+               <span style="--i:5"></span>
+               <span style="--i:6"></span>
+               <span style="--i:7"></span>
+               <span style="--i:8"></span>
+               <span style="--i:9"></span>
+               <span style="--i:10"></span>
+               <span style="--i:11"></span>
+               <span style="--i:12"></span>
+               <span style="--i:13"></span>
+               <span style="--i:14"></span>
+               <span style="--i:15"></span>
+               <span style="--i:16"></span>
+           </view>
+       </view>
+   </view>
+</view>

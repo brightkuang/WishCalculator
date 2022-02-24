@@ -1,0 +1,10 @@
+.BoxBackgroundColor{
+  background-color: #D9A7A7;
+}
+
+@media(prefers-color-scheme:dark){
+  .BoxBackgroundColor{
+    background-color: #B6CAF2;
+  }
+
+}

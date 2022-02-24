@@ -1,0 +1,49 @@
+<!--pages/primogem/primogem.wxml-->
+<wxs module="filters" src="../../filters.wxs"></wxs>
+<view style="width: 750rpx;height: {{navigationbarH}}px;" class="BoxBackgroundColor"></view>
+<scroll-view scroll-x="true" style="width: 750rpx;height: 20vh;box-shadow: 0px 2px 1px 1px rgb(82, 82, 82) ;" class="BoxBackgroundColor">
+  <view style="display: flex;flex-direction: row;">
+    <block wx:for="{{name}}" wx:if="{{wish[index]}}">
+      <view style="flex:0 0 150rpx;margin: 30rpx;">
+        <view style="width: 150rpx;height: 15vh;flex-direction: column;" class="card" >
+          <view class="roma" style="font-size: 50rpx;" wx:if="{{possibility[index]!=0}}">{{filters.toFix(possibility[index])}}%</view>
+          <view class="roma" style="font-size: 50rpx;" wx:if="{{possibility[index]==0}}">待计算</view>
+          <view style="margin-top: 70rpx;" >{{name[index]}}</view>
+        </view>
+
+     
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+
+<view class="text">
+  <block wx:for="{{chouname}}">
+    <view class="box">
+      <view style="display: flex;">
+        <image style=" height:50rpx ;width: 10rpx;  flex:0 0 50rpx;margin-top: 0rpx;" src="/images/Item_Primogem.png"></image>
+
+        <view style="flex:0 0 410rpx;">
+          在{{chouname[index]}}前{{lasttime[index]}}天内肝/氪</view>
+          <input style="flex:0 0 100rpx;" type="number" data-index="{{index}}" bindblur="input" value="{{input[index]}}" />
+          <view style="flex:0 0 100rpx;width: 100rpx;">原石</view>
+        
+      </view>
+    </view>
+  </block>
+</view>
+
+
+
+<view style="width: 650rpx; left: 50rpx; bottom: 200rpx;" class="button" bindtap="calculate">calculate</view>
+
+
+
+<loading hidden="{{loadingHidden}}">
+  Calculating...
+</loading>
+
+
+<view class="button" hover-class="button-tap" style="right: 50rpx;" bindtap="next">next</view>
+<view class="button" hover-class="button-tap" style="left: 50rpx;" bindtap="back">back</view>

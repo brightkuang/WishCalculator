@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view style="margin-top:{{navigationbarH}}px"></view>
+<view style="margin: 50rpx;margin-top: 180rpx;box-shadow: 0px 2px 4px 2px rgb(204, 203, 203) ; color: black;">
+
+<van-calendar 
+  row-height="{{82}}"
+  show-title="{{false}}"
+  poppable="{{ false }}"
+  show-confirm="{{ false }}"
+  class="calendar"
+  formatter="{{ formatter }}" show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm"
+  show-mark="{{false}}"
+  color="{{ziti}}"
+/>
+</view>
+
+<view class="inputbox">
+<input type="number" bindinput="input" value="{{textValue}}"></input>
+</view>
+
+<view style="position: fixed;top: {{navigationbarH-10}}px;left: 50rpx;">点击以修改预计原石获取数量</view>
+
+<view class="button" hover-class="button-tap" style="left: 50rpx;" bindtap="back">back</view>
+

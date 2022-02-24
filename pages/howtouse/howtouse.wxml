@@ -1,0 +1,72 @@
+<!--pages/how to use/howtouse.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;" class="BoxBackgroundColor"></view>
+<view style="margin-top: {{returnH}}px;"></view>
+<image src="{{addimagesource}}" style="width: 60rpx; height: 60rpx;margin: 60rpx;margin-bottom: 0rpx;" bindtap="return"></image>
+
+<view class="box">
+<view style="text-indent: 60rpx;">  你是否在每次抽卡时都担心已有的原石资源不足以抽出想要的角色，又因为无法提前确定需要多少原石而在大世界不断寻找宝箱？别担心！我们的【祈愿计算器】能完美解决你的这些烦恼！该小程序原神玩家大多可以直接上手使用，考虑到部分新手玩家对于游戏机制还不熟悉，本文将详细讲解这一工具的使用。</view>
+
+<view style="font-weight:900">一、首页</view>
+<view>
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214ea382ab3f51d919d16c0.jpg"   />
+</view>
+<view style="text-indent: 60rpx;">打开小程序，首先点击“开始”按钮，进入“卡池选择”的界面。右下角则可以前往“使用说明”页面进行查看。</view>
+
+
+<view style="font-weight: 900;">二、卡池选择</view>
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214ea382ab3f51d919d16cc.jpg"   />
+
+<view style="text-indent: 60rpx;">由每个玩家进行选择自身的目标的卡池以及目标角色命座的情况（测试版至多选择两项），通过点击“delete”按钮来进行删选。并以此作为后续计算祈愿概率以及原石获取建议的计算基础。接着进入“客观资料填写”页面</view>
+<view style="font-weight: 900;">三：客观资料填写</view>
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214ea382ab3f51d919d16ad.jpg"   />
+<view>个人数值设置：
+根据自身情况进行填写，大多都易于理解。</view>
+
+<view>
+<image class="datu"  src="https://pic.imgdb.cn/item/6213a8e32ab3f51d911c37cd.jpg"   />
+</view>
+
+
+<view>打开祈愿界面可以获得原石数量、纠缠之缘数量。</view>
+
+
+
+
+<image class="datu"  src="https://pic.imgdb.cn/item/6213a8522ab3f51d911a4507.jpg"   />
+
+<view>历史抽取数量：点开祈愿界面的历史记录，查看距离上次五星已抽取次数（即已垫抽数）并填写具体数值。</view>
+<view>保底选择：如果上次出的五星为up角色，则选择小保底，反之选择大保底。</view>
+<view>每日委托：是否会做每日四次的委托任务。</view>
+<view>深渊预期目标：根据自身能力判断可获得的深境螺旋总星数。</view>
+<view>月卡：是否开通30天的空月祝福（30￥）。</view>
+<view>珍珠纪行：是否开通付费纪行（68￥）。</view>
+
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214ea382ab3f51d919d16b5.jpg"   />
+
+<view>日历：点击按钮进入日历界面，查看当前条件下每日的预计原石获取量，也可以自行修改。</view>
+
+<view>点击“next”按钮进入“计算以及主观资料填写”页面</view>
+<view style="font-weight: 900;">四、计算以及主观资料</view>
+
+<view >主观原石获取量：根据玩家选择的卡池数量，填写自己在每个卡池结束前所预计能从大世界探索等渠道获得的原石数量。（注意：不包括客观资料中已有的部分）</view>
+
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214eaff2ab3f51d919f5916.jpg"  />
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214eaff2ab3f51d919f5907.jpg"   />
+<view style="text-indent: 60rpx;">随后，点击计算按钮进行计算（注意：两个及两个以上池子计算会会用时较久）。可以通过修改其他数据来进行多次计算。我们给出的结果分别为各个目标卡池的出货概率，以及推荐再去获取的原石数量。当角色池74抽、武器池63抽后，出货概率可能大幅增大。当对预测概率感到担忧时，再增加适量原石可能会大大提升概率</view>
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214eaff2ab3f51d919f58e6.jpg"   />
+<view>点击“next”按钮进入“结果”页面</view>
+
+<view style="font-weight: 900;">五、结果</view>
+<view style="text-indent: 60rpx;">该页面用以对之前计算得出的概率所需的原石进行简单的获取规划，帮助玩家制定更好的未来规划方案。</view>
+
+<image class="shutu"  src="https://pic.imgdb.cn/item/6214eaff2ab3f51d919f58ef.jpg"   />
+
+<view>总数：先前所填写的主观获取原石数量。</view>
+<view>剩余：总数减去预计氪金量的剩余所需原石数量。</view>
+<view>预计氪金量：可自由选择氪金量来达成前一页面所需的原石数量。同时点击按钮来选择是否有首充奖励。</view>
+
+
+
+<view>免责声明：预测结果仅供参考，不代表原神内真实抽卡情况，本小程序不承担和此预测结果直接或间接相关的一切责任。</view>
+
+</view>

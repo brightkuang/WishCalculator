@@ -1,0 +1,21 @@
+/* pages/pools/pools.wxss */
+page{
+  background-color: #F2E9EE;
+}
+
+.deletecolor{
+  color: #8C3565;
+  text-decoration: underline; 
+}
+@import"/button.wxss";
+@import"/topbox.wxss";
+@import"/topcard.wxss";
+@media(prefers-color-scheme:dark){
+  page{
+    background-color: #222A59;
+  }
+  .deletecolor{
+    color: #F2DFEB; 
+    text-decoration: underline;
+  }
+}

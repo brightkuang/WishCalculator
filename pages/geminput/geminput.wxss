@@ -1,0 +1,103 @@
+/* pages/geminput/geminput.wxss */
+@import"/button.wxss";
+@import"/topbox.wxss";
+@import"/topcard.wxss";
+
+page {
+  background-color: #F2E9EE;
+}
+
+.text {
+  font-family: PingFang SC;
+  font-size: 35rpx;
+}
+
+.inputbox {
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 30rpx;
+  margin-left: 120rpx;
+  background-color: #dad2d6;
+
+}
+
+.calinputbox {
+ 
+  width: 250rpx;
+  height: 60rpx;
+  margin-top: 0rpx;
+  margin-left: 70rpx;
+  background-color: #D9A7A7;
+  color: #8C3565;
+  padding-top: 0rpx;
+  padding-bottom: 0rpx;
+  padding-left: 10rpx;
+  bottom: 100rpx;
+  border-radius: 30rpx;
+  font-size: 45rpx;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: solid #8C3565 3rpx;
+  box-shadow: 0px 0px 2px 2px #8d8d8d;
+}
+
+.calbutton-tap {
+  color: #8C35653b;
+  background-color: #D9A7A73b;
+  border: solid #8C35653b 3rpx;
+  box-shadow: 0px 0px 1px 1px rgb(167, 167, 167);
+}
+
+
+
+
+
+
+@media(prefers-color-scheme:dark) {
+
+  page {
+    background-color: #222A59;
+  }
+  .text {
+    margin-top: 5rpx;
+    font-family: PingFang SC;
+    font-size: 35rpx;
+  }
+
+  .inputbox {
+    width: 250rpx;
+    height: 70rpx;
+    border-radius: 30rpx;
+    margin-left: 120rpx;
+    background-color: #2a346d;
+    
+
+  }
+  .calinputbox {
+    width: 250rpx;
+    height: 60rpx;
+    margin-top: 0rpx;
+    margin-left:70rpx;
+    background-color: #6b7fac;
+    color: #F2EBEE;
+    padding-top: 0rpx;
+    padding-bottom: 0rpx;
+    padding-left: 7rpx;
+    bottom: 100rpx;
+    border-radius: 30rpx;
+    font-size: 45rpx;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid #F2DFEB 3rpx;
+    box-shadow: 0px 0px 2px 2px #8d8d8d;
+  }
+  .calbutton-tap {
+    color: #F2EBEE3b;
+    background-color: #6b7fac3b;
+    border: solid #F2DFEB3b 3rpx;
+    box-shadow: 0px 0px 1px 1px rgb(167, 167, 167);
+  }
+
+
+
+}

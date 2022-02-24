@@ -1,0 +1,48 @@
+<!--pages/result/result.wxml-->
+
+<!--请勿格式化文档-->
+
+<wxs module="filters" src="../../filters.wxs"></wxs>
+<view style="width: 750rpx;height: {{navigationbarH}}px;" class="BoxBackgroundColor"></view>
+<scroll-view scroll-x="true" style="width: 750rpx;height: 20vh;box-shadow: 0px 2px 1px 1px rgb(82, 82, 82) ;" class="BoxBackgroundColor">
+  <view style="display: flex;flex-direction: row;">
+    <block wx:for="{{name}}" wx:if="{{wish[index]}}">
+      <view style="flex:0 0 150rpx;margin: 30rpx;">
+        <view style="width: 150rpx;height: 15vh;flex-direction: column;" class="card">
+          <view class="roma" style="font-size: 50rpx;" wx:if="{{possibility[index]!=0}}">{{filters.toFix(possibility[index])}}%</view>
+          <view class="roma" style="font-size: 50rpx;" wx:if="{{possibility[index]==0}}">待计算</view>
+          <view style="margin-top: 70rpx;">{{name[index]}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+<!--总数-->
+<view style="display: flex;">
+<view style="text-indent: 50rpx; font-family: PingFang SC;font-size: 40rpx;margin-top: 30rpx;width: 300rpx;margin-left: 20rpx;">总数:{{total}}</view>
+<!--剩余-->
+<view style="text-indent: 50rpx; font-family: PingFang SC;font-size: 40rpx;margin-top: 30rpx;margin-left: 80rpx;width: 300rpx;">剩余:{{lasting}}</view>
+</view>
+
+<view class="waikuang">
+  <view style="display: flex;">
+    <image style=" height:40rpx ;width: 40rpx;  flex:0 0 50rpx;margin-top: 20rpx;margin-left: 10rpx;" src="/images/fangan.svg"></image>
+    <view class="pen">预计氪金量:</view>
+  </view>
+  <text space="ensp">  充钱数       次数         是否是首充</text>
+  <block wx:for="{{pay}}">
+    <view style="display: flex;margin-left: 50rpx;margin-top: 20rpx;margin-bottom: 10rpx;">
+      {{payname[index]}}
+      <van-stepper style="margin-left: 80rpx;margin-top: 5rpx;margin-bottom: 5rpx;" value="{{pay[index]}}" min="0" bind:change="paychange" data-index="{{index}}" />
+      <van-switch style="margin-left: 80rpx;margin-top: 5rpx;margin-bottom: 5rpx;"checked="{{firstpay[index]}}" active-color="{{activecolor}}" inactive-color="{{inactivecolor}}" bind:change="payonChange" data-index="{{index}}" />
+
+    </view>
+  </block>
+</view>
+
+
+
+
+
+<view class="button" hover-class="button-tap" style="left: 50rpx;" bindtap="back">back</view>
+<view class="button" hover-class="button-tap" style="right: 50rpx;" bindtap="end">end</view>

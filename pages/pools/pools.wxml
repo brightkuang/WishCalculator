@@ -1,0 +1,25 @@
+<!--pages/pools/pools.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;" class="BoxBackgroundColor"></view>
+<scroll-view scroll-x="true" style="width: 750rpx;height: {{barheight}}vh;box-shadow: 0px 2px 1px 1px rgb(82, 82, 82) ;" class="BoxBackgroundColor">
+  <view style="display: flex;flex-direction: row;">
+    <block wx:for="{{name}}" wx:if="{{wish[index]}}">
+      <view style="flex:0 0 150rpx;margin: 30rpx;">
+        <view style="width: 150rpx;height: 15vh;flex-direction: column;" class="card" >
+          <view class="roma">{{roma[index]}}</view>
+          <view>{{name[index]}}</view>
+        </view>
+        <view style="position: relative;height: 40rpx;width: 150rpx;font-size: 30rpx;border-radius: 30rpx; margin-top: 120rpx; " class="button1" hover-class="button-tap" data-index="{{index}}" bindtap="delete">delete</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+
+
+<picker mode="multiSelector" value="{{index}}" range="{{pools}}" range-key="name" bindchange="add">
+  <image src="{{pooladdimagesource}}" style="width: 200rpx;height: 200rpx;margin-top: 20vh;margin-left: 275rpx;"></image>
+</picker>
+
+<view class="button" hover-class="button-tap" style="right: 50rpx;" bindtap="next">next</view>
+<view class="button" hover-class="button-tap" style="left: 50rpx;" bindtap="back">back</view>
+<van-toast id="van-toast" />

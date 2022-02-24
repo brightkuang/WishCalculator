@@ -1,0 +1,5 @@
+<!--pages/tuandui/tuandui.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;"></view>
+<view class="test-big">
+  <image src="https://pic.imgdb.cn/item/62139beb2ab3f51d91f52a7f.jpg" class="bg-image" mode="scaleToFill"></image>
+</view>

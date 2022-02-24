@@ -1,0 +1,38 @@
+<!--aboutus.wxml-->
+<view style="width: 750rpx;height: {{navigationbarH}}px;" class="BoxBackgroundColor"></view>
+<view style="margin-top: {{returnH}}px;"></view>
+<image src="{{addimagesource}}" style="width: 60rpx; height: 60rpx;margin: 60rpx;" bindtap="return"></image>
+<view bindtap="bindtap1">
+    <view class="boxmode1"  >
+      <view class="pen">制作团队</view>
+      <view class="imgsize2">
+        <image class="image2" style="margin-top: 25rpx;"  src="https://pic.imgdb.cn/item/620668ac2ab3f51d91a2e543.png"></image>
+      </view>
+    </view>
+</view>
+
+<view bindtap="bindtap2">
+  <view class="boxmode2">
+    <view class="pen">制作理念</view>
+    <view class="imgsize1">
+      <image class="image1" src="https://pic.imgdb.cn/item/620668ac2ab3f51d91a2e53d.png"></image>
+    </view>
+  </view>
+</view>
+
+<view bindtap="bindtap3">
+  <view class="boxmode1">
+    <view class="pen">制作方式</view>
+
+    <view class="imgsize2">
+      <image class="image2" src="https://pic.imgdb.cn/item/620668ac2ab3f51d91a2e54b.png"></image>
+    </view>
+
+  </view>
+</view>
+
+
+<view style="background-color: rgba(0, 0, 0, 0.05);height: 3rpx;position: fixed;top: {{pya}}rpx;transform: rotate({{dega}}deg);left:{{pxa}}rpx;width: {{lengtha}}rpx;"></view>
+<view style="background-color:  rgba(0, 0, 0, 0.05);height: 3rpx;position: fixed;top: {{pyb}}rpx;transform: rotate({{degb}}deg);left:{{pxb}}rpx;width: {{lengthb}}rpx;"></view>
+<view style="background-color:  rgba(0, 0, 0, 0.05);height: 3rpx;position: fixed;top: {{pyc}}rpx;transform: rotate({{degc}}deg);left:{{pxc}}rpx;width: {{lengthc}}rpx;"></view>
+
